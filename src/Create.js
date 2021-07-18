@@ -14,7 +14,7 @@ const Create = () => {
         const blog = {title, body, author};
        
         setIsLoading(true)
-        fetch('http://taofiq-blog-api.herokuapp.com/blogs/', {
+        fetch('https://taofiq-blog-api.herokuapp.com/blogs/', {
             method: "POST",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(blog)
