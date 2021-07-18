@@ -98,7 +98,6 @@ article p {
    display: block;
    outline: none;
    border: none;
-   transform: translateX(14rem)
  }
 
  .btn-grad:hover {
