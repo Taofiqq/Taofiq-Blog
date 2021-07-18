@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className="navbar">
            <h1 className="navbar-name">My Mini React Blog</h1> 
            <div className="navbar-links">
-               <Link to="/" className="navbar-link" >Home</Link>
+               <Link to="/" className="navbar-link">Home</Link>
                <Link to="/create" className="navbar-link" >New Blog</Link>
            </div>
         </div>

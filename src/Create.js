@@ -24,11 +24,11 @@ const Create = () => {
         history.push('/')
     } 
     return (
-        <div>
+        <div className="create-container">
             <h2>Add New Blog</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="create-form">
                 <label htmlFor="">Blog Title</label>
-                <input type="text" value={title} onChange = {(e) => setTitile(e.target.value)} required/>
+                <input type="text" value={title} onChange = {(e) => setTitile(e.target.value)} placeholder="Enter your blog title" required/>
                 <label htmlFor="">Blog Body</label>
                 <textarea value={body} onChange = {(e) => setBody(e.target.value)} required></textarea>
                 <label>Blog Author</label>
@@ -36,7 +36,7 @@ const Create = () => {
                    <option value="Taofiq">Taofiq</option>
                    <option value="Dami">Dami</option>
                </select>
-               { !isLoading && <button>Add Blog</button>}
+               { !isLoading && <button className="createBtn">Add Blog</button>}
             </form>
         </div>
     )
