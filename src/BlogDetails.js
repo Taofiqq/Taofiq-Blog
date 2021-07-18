@@ -4,11 +4,11 @@ import useFetch from './useFetch';
 
 const BlogDetails = () => {
     const {id} = useParams();
-    const {data:blog, isLoading, error} = useFetch('http://taofiq-blog-api.herokuapp.com/blogs/' + id);
+    const {data:blog, isLoading, error} = useFetch('https://taofiq-blog-api.herokuapp.com/blogs/' + id);
     const history =  useHistory()  
 
     const handleDelete = () => {
-        fetch('http://taofiq-blog-api.herokuapp.com/blogs/' + blog.id, {
+        fetch('https://taofiq-blog-api.herokuapp.com/blogs/' + blog.id, {
             method: "DELETE"
         }).then(() => {
           history.push('/')
